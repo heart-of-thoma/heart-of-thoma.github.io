@@ -22,7 +22,7 @@ body {
 }
 
 .header-title {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .header-note {
@@ -34,6 +34,29 @@ body {
 .content {
   background: #fff;
   line-height: 1.9;
+}
+
+/* 会話 */
+.dialog {
+  margin: 2.4em 0;
+}
+
+.dialog p {
+  margin: 0 0 0.3em;
+}
+
+/* 会話の最後の行だけ余白なし */
+.dialog p:last-child {
+  margin-bottom: 0;
+}
+
+/* 強調する文 */
+.isolated {
+  margin: 2.8em 0;
+}
+
+.isolated-strong {
+  margin: 5.0em 0;
 }
 
 /* フッター */
@@ -84,17 +107,30 @@ body {
 
 <div class="header">
   <div class="header-title">Privatter（ではない）</div>
-  <div class="header-note">※GitHub Pages上の個人ページです</div>
+  <div class="header-note">※自前サイトにあるページです</div>
 </div>
 
 <div class="content">
   <p>ここに本文を書きます。</p>
   <p>改行・余白・間はそのまま。</p>
+  <div class="dialog">
+    <p>「Aじゃないか？」</p>
+    <p>「Bじゃないか？」</p>
+    <p>「Cじゃないか？」</p>
+  </div>
+  <p>いや、Dじゃないか？僕は確信してしまった。<br>本当か？本当にこれは僕の意思なのか？</p>
+  <p class="isolated-strong">いつからDだと錯覚していた？</p>
+  <p>こんな、いつのまにか操作されていたんだ！いつ、いつから・・・</p>
+  <p>誰も、だれも信用できない。</p>
+  <p>焦燥が、絶望がこみあげてくる</p>
+  <p class="isolated">いや、あきらめるな</p>
+  <p>何も終わっちゃいない！</p>
+  <p>俺たちの冒険は、まだまだ続くんだ！</p>
 
   <div style="margin-top:40px; text-align:center;">
     <button class="fake-like"
-        onclick="this.innerText='押しましたね'; this.disabled=true;">
-        いいね
+        onclick="this.innerText='★押しましたね'; this.disabled=true;">
+        ☆いいね
     </button>
   </div>
 </div>
