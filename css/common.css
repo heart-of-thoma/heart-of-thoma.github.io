@@ -372,6 +372,10 @@ SNSアイコンリスト
 .snslist .snslist__item.twitter:hover a {
   background-color: #1DA1F2;
 }
+/* X用に追加 */
+.snslist .snslist__item.x:hover a {
+  background-color: #000;
+}
 .snslist .snslist__item.instagram:hover a {
   background-color: #CF2E92;
 }
@@ -384,6 +388,13 @@ SNSアイコンリスト
 .snslist .snslist__item .lab {
   margin: 6px 1px 3px 3px;
   font-size: 2rem;
+}
+/* X用に追加 */
+.sns-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  color: #fff; /* ← SVGの色 */
 }
 @media screen and (max-width: 520px) {
   .snslist {
