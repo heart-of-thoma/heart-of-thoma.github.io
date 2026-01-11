@@ -181,6 +181,20 @@ h5 {
 
 /*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 
+追加：水平線
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.divider {
+  border: 0;
+  height: 10px;
+  margin: 40px 0;
+  background:
+    radial-gradient(currentColor 2px, transparent 3px) center/14px 10px repeat-x;
+  opacity: 0.35;
+}
+
+/*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
 アイコン等
 
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
@@ -376,6 +390,10 @@ SNSアイコンリスト
 .snslist .snslist__item.x:hover a {
   background-color: #000;
 }
+/* マシュマロ用に追加 */
+.snslist .snslist__item.marshmallow:hover a {
+  background-color: #F3969A;
+}
 .snslist .snslist__item.instagram:hover a {
   background-color: #CF2E92;
 }
@@ -389,7 +407,7 @@ SNSアイコンリスト
   margin: 6px 1px 3px 3px;
   font-size: 2rem;
 }
-/* X用に追加 */
+/* X、マシュマロ用に追加 */
 .sns-icon {
   width: 20px;
   height: 20px;

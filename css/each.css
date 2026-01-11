@@ -197,6 +197,12 @@ LINK
   font-size: clamp(1.4rem, 1.36rem + 0.2vw, 1.6rem);
 }
 
+/* 中編にあらすじを記載するために、マージンを調整したスタイルを追加 */
+.middle .novellist__title {
+  font-size: clamp(1.6rem, 1.52rem + 0.4vw, 1.9rem);
+  margin: 0 0 2px;
+}
+
 /* 数字プラス小タイトルの数字の色 */
 .novellist__number {
   color: #5769B7;
@@ -207,7 +213,7 @@ LINK
 .novellist__text {
   display: block;
   font-size: 0.8em;
-  margin: 10px;
+  margin: 5px;
   margin-left: 20px;
 }
 
